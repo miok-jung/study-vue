@@ -5,4 +5,11 @@
 module.exports = {
   publicPath: "/study-vue",
   outputDir: "docs",
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `@import "@/assets/scss/_variabled.scss";`,
+      },
+    },
+  },
 };
