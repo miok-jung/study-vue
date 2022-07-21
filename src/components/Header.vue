@@ -1,11 +1,7 @@
 <template>
-  <nav>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <a href="#">eewfj</a>
-  </nav>
+  <h1>Left</h1>
+  <p>center</p>
+  <p>Right</p>
 </template>
 
 <script>
@@ -14,8 +10,8 @@ export default {
 };
 </script>
 
-<style>
-li {
+<style lang="scss">
+p {
   color: $sky;
 }
 </style>
