@@ -3,6 +3,14 @@
 //   transpileDependencies: true
 // })
 module.exports = {
+  pwa: {
+    name: "study-vue",
+    themeColor: "#4dba87",
+    msTileColor: "#000",
+    workboxOptions: {
+      exclude: [/\.map$/, /manifest\.json$/, "index.html"],
+    },
+  },
   publicPath: "/study-vue",
   outputDir: "docs",
   css: {
