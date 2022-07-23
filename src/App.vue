@@ -1,17 +1,27 @@
 <template>
-  <div>
-    <router-link to="/">Go to Home</router-link>
-    <router-link to="/realestate">Go to Real-Estate App</router-link>
-  </div>
+  <header>
+    <h1>BUDONGSAN APP</h1>
+  </header>
+  <section>
+    <List :data="data[i]" v-for="(list, i) in data" :key="i" />
+  </section>
 </template>
 
 <script>
+import data from "./assets/dummy/budongsan";
+import List from "./components/List.vue";
+
 export default {
+  // .uve 마다 이름 필수 두개의 단어와 하이폰으로 이어지게 작성
   name: "App",
+  // 데이터 저장공간
   data() {
-    return {};
+    return {
+      data: data,
+    };
   },
-  components: {},
+
+  components: { List },
 };
 </script>
 
