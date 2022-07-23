@@ -1,31 +1,17 @@
 <template>
-  <Header msg="Welcome to Your Vue.js App" />
-  <hr />
-  <Container :step="step" />
-  <hr />
-  <footer>
-    <li @click="step = 0">Tab1</li>
-    <li @click="step = 1">Tab2</li>
-    <li @click="step = 2">Tab3</li>
-    <li @click="step = 3">Tab4</li>
-  </footer>
+  <div>
+    <router-link to="/">Go to Home</router-link>
+    <router-link to="/realestate">Go to Real-Estate App</router-link>
+  </div>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Container from "./components/Container.vue";
-
 export default {
   name: "App",
   data() {
-    return {
-      step: 0,
-    };
+    return {};
   },
-  components: {
-    Header,
-    Container,
-  },
+  components: {},
 };
 </script>
 
