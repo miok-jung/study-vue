@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 * {
   margin: 0;
   padding: 0;
@@ -36,5 +36,18 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+body {
+  background-color: $sky;
+}
+@include tablet {
+  body {
+    background-color: $light_sky;
+  }
+}
+@include mobile {
+  body {
+    background-color: $blue;
+  }
 }
 </style>
