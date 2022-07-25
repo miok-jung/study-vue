@@ -40,6 +40,10 @@ a {
 body {
   background-color: $sky;
 }
+h1 {
+  text-align: center;
+  margin: 2vh 0;
+}
 @include tablet {
   body {
     background-color: $light_sky;

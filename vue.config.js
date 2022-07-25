@@ -11,8 +11,7 @@ module.exports = {
       exclude: [/\.map$/, /manifest\.json$/, "index.html"],
     },
   },
-  // publicPath: "/study-vue",
-  publicPath: "/",
+  publicPath: "/study-vue",
   outputDir: "docs",
   css: {
     loaderOptions: {
