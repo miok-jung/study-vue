@@ -1,10 +1,10 @@
 import { createWebHistory, createRouter } from "vue-router";
-
+import BudongsanMain from "./components/budongsan/Home.vue";
 const routes = [
-  // {
-  //   path: "/",
-  //   component: Home,
-  // },
+  {
+    path: "/study-vue",
+    component: BudongsanMain,
+  },
 ];
 
 const router = createRouter({
