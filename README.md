@@ -1,24 +1,4 @@
 # study-vue
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Tag List
+### study-vue2
+- 코딩애플에서 공부한 것을 토대로 업로드 (스스로 기억을 토대로 푸쉬)
