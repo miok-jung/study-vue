@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 // Components
-import MainNav from '../components/MainNav.vue';
-import MainContainer from '../components/MainContainer.vue'
+import MainNav from "../components/MainNav.vue";
+import MainContainer from "../components/MainContainer.vue";
 
 export default defineComponent({
-  name: 'HomeView',
+  name: "HomeView",
 
   components: {
     MainNav,
