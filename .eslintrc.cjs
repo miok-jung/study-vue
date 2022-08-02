@@ -6,7 +6,7 @@ module.exports = {
   "extends": [
     "plugin:vue/vue3-essential",
     "eslint:recommended",
-    "@vue/eslint-config-prettier"
+    "@vue/eslint-config-prettier","react-app", "prettier"
   ],
   "overrides": [
     {
@@ -17,5 +17,10 @@ module.exports = {
         "plugin:cypress/recommended"
       ]
     }
-  ]
+  ],
+  // esLint 에러 추가문구 extends에서 마지막 두개도 포함됨
+  "plugins": ["prettier"],   
+  "rules": {     
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]   
+  }
 }

@@ -1,18 +1,23 @@
 <template>
-  <HelloWorld />
+  <v-app>
+    <MainNav />
+    <MainContainer />
+  </v-app>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
 
 // Components
-import HelloWorld from '../components/HelloWorld.vue';
+import MainNav from '../components/MainNav.vue';
+import MainContainer from '../components/MainContainer.vue'
 
 export default defineComponent({
   name: 'HomeView',
 
   components: {
-    HelloWorld,
+    MainNav,
+    MainContainer,
   },
 });
 </script>
