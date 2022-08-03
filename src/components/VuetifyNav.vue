@@ -1,9 +1,9 @@
 <template>
   <v-app-bar color="surface">
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="toggle = !toggle"></v-app-bar-nav-icon>
     <v-app-bar-title>Application</v-app-bar-title>
   </v-app-bar>
-  <v-navigation-drawer v-if="toggle == true">
+  <v-navigation-drawer permanent v-if="toggle == true">
     <!-- temporary : 뒷배경 반투명검정 -->
     <v-list-item>
       <v-list-item-title class="text-h6">Application</v-list-item-title>
@@ -71,7 +71,7 @@ const items = ref<Item[]>([
   { title: "About", icon: "mdi-help-box" },
 ]);
 
-let toggle = true;
+let toggle = ref<boolean>(false);
 let loading = ref<boolean[]>([]);
 let count = ref<number | string[]>(0);
 
