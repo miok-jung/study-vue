@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <MainNav />
+    <VuetifyNav />
     <MainContainer />
   </v-app>
 </template>
@@ -9,14 +9,14 @@
 import { defineComponent } from "vue";
 
 // Components
-import MainNav from "../components/MainNav.vue";
+import VuetifyNav from "../components/VuetifyNav.vue";
 import MainContainer from "../components/MainContainer.vue";
 
 export default defineComponent({
   name: "HomeView",
 
   components: {
-    MainNav,
+    VuetifyNav,
     MainContainer,
   },
 });

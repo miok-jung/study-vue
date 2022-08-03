@@ -12,7 +12,6 @@
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'"
   },
   "dependencies": {
-    "@mdi/font": "5.9.55",
     "node-sass": "^7.0.1",
     "pinia": "^2.0.16",
     "roboto-fontface": "*",
@@ -23,6 +22,7 @@
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
+    "@mdi/font": "^7.0.96",
     "@rushstack/eslint-patch": "^1.1.0",
     "@vitejs/plugin-vue": "^3.0.1",
     "@vue/eslint-config-prettier": "^7.0.0",
@@ -32,6 +32,7 @@
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-vue": "^9.0.0",
     "jsdom": "^20.0.0",
+    "material-design-icons-iconfont": "^6.7.0",
     "prettier": "^2.5.1",
     "sass": "^1.54.0",
     "start-server-and-test": "^1.14.0",
