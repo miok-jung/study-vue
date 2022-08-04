@@ -71,9 +71,9 @@ const items = ref<Item[]>([
   { title: "About", icon: "mdi-help-box" },
 ]);
 
-let toggle = ref<boolean>(false);
 let loading = ref<boolean[]>([]);
 let count = ref<number | string[]>(0);
+let toggle = ref<boolean>(false);
 
 const load = (i) => {
   loading.value[i] = true;
