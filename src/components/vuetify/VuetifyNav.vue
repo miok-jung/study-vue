@@ -54,6 +54,7 @@
       >
       <p>ref Number: {{ count }}</p>
     </v-banner>
+    <router-link to="/vuetify/study1">Study1</router-link>
   </v-navigation-drawer>
 </template>
 
