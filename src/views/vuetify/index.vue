@@ -13,4 +13,3 @@
 import VuetifyNav from "../../components/vuetify/VuetifyNav.vue";
 import VuetifyFooter from "../../components/vuetify/VuetifyFooter.vue";
 </script>
-<style lang="scss" scoped></style>

@@ -33,8 +33,6 @@
     ><!-- 선 -->
     <v-list nav>
       <v-list-item v-for="item in items" :key="item.title" link>
-        <!-- <v-icon>{{ item.icon }}</v-icon> -->
-        <!-- TODO 대시 원인이 무언인가? -->
         <v-icon :icon="item.icon"></v-icon>
         <v-list-item-title>{{ item.title }}</v-list-item-title>
       </v-list-item>
@@ -54,7 +52,23 @@
       >
       <p>ref Number: {{ count }}</p>
     </v-banner>
-    <router-link to="/vuetify/study1">Study1</router-link>
+    <v-list-item-group>
+      <v-list>
+        <router-link to="/vuetify">Vuetify Main</router-link>
+      </v-list>
+      <v-list>
+        <router-link to="/vuetify/slide">Vuetify Slide</router-link>
+      </v-list>
+      <v-list>
+        <router-link to="/vuetify/switch">Vuetify Switch</router-link>
+      </v-list>
+      <v-list>
+        <router-link to="/vuetify/textarea">Vuetify Textarea</router-link>
+      </v-list>
+      <v-list>
+        <router-link to="/vuetify/textfield">Vuetify TextField</router-link>
+      </v-list>
+    </v-list-item-group>
   </v-navigation-drawer>
 </template>
 

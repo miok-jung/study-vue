@@ -17,6 +17,11 @@
       <h2>to Ref</h2>
       <p>reactive 객체의 속성에서 하나의 단일 ref객체로 만들 때 사용</p>
       <p>toRefFoo: {{ fooRef }}, toRefBar: {{ barRef }}</p>
+      <div>
+        <p>person1: {{ person1.name }}, {{ person1.age }}</p>
+        <p>person2: {{ person2.name }}, {{ person2.age }}</p>
+        <button @click="handleClick">Change person</button>
+      </div>
     </div>
   </div>
 </template>
@@ -53,6 +58,16 @@ let toRefTest = reactive({
 });
 const fooRef = toRef(toRefTest, "foo");
 const barRef = toRef(toRefTest, "bar");
+
+const person1 = ref({ name: "miok", age: 30 });
+const person2 = reactive({ name: "miyoung", age: 35 });
+
+const handleClick = () => {
+  // ref로 감싼 값을 변경할 때는 value로 한번 들어가주고 값을 바꿉니다.
+  person1.value.age = 29;
+  // reactive는 바로 값을 바꿉니다
+  person2.age = 30;
+};
 </script>
 <style lang="scss" scoped>
 .main {
