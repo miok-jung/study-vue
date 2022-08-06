@@ -3,7 +3,22 @@
     <v-app-bar-nav-icon @click="toggle = !toggle"></v-app-bar-nav-icon>
     <v-app-bar-title>Application</v-app-bar-title>
   </v-app-bar>
-  <v-navigation-drawer permanent v-if="toggle == true">
+  <v-navigation-drawer permanent v-if="toggle == true" width="100%">
+    <v-list nav>
+      <router-link to="/vuetify">Vuetify Main</router-link>
+    </v-list>
+    <v-list nav>
+      <router-link to="/vuetify/slide">Vuetify Slide</router-link>
+    </v-list>
+    <v-list nav>
+      <router-link to="/vuetify/switch">Vuetify Switch</router-link>
+    </v-list>
+    <v-list nav>
+      <router-link to="/vuetify/textarea">Vuetify Textarea</router-link>
+    </v-list>
+    <v-list nav>
+      <router-link to="/vuetify/textfield">Vuetify TextField</router-link>
+    </v-list>
     <!-- temporary : 뒷배경 반투명검정 -->
     <v-list-item>
       <v-list-item-title class="text-h6">Application</v-list-item-title>
@@ -52,23 +67,6 @@
       >
       <p>ref Number: {{ count }}</p>
     </v-banner>
-    <v-list-item-group>
-      <v-list>
-        <router-link to="/vuetify">Vuetify Main</router-link>
-      </v-list>
-      <v-list>
-        <router-link to="/vuetify/slide">Vuetify Slide</router-link>
-      </v-list>
-      <v-list>
-        <router-link to="/vuetify/switch">Vuetify Switch</router-link>
-      </v-list>
-      <v-list>
-        <router-link to="/vuetify/textarea">Vuetify Textarea</router-link>
-      </v-list>
-      <v-list>
-        <router-link to="/vuetify/textfield">Vuetify TextField</router-link>
-      </v-list>
-    </v-list-item-group>
   </v-navigation-drawer>
 </template>
 
