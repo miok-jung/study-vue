@@ -1,17 +1,17 @@
 <template>
+  <Navigation />
   <div class="wrap">
-    <Navigation />
     <router-view></router-view>
     <footer>푸터 준비중입니다.</footer>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Navigation from "@/components/vue/VueNavigation.vue";
 </script>
-
-<style lang="scss" scoped>
+<style lang="scss">
 .wrap {
-  border: 1px solid red;
+  width: 90%;
+  margin: 0 auto;
 }
 </style>

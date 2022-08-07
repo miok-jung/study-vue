@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: "/vue",
       name: "vue home",
-      component: () => import("@/views/vue/index.vue"),
+      component: () => import("@/views/vue/VueLayout.vue"),
       children: [
         {
           path: "",
@@ -22,6 +22,11 @@ const router = createRouter({
           path: "props",
           component: () => import("@/views/vue/VueProps.vue"),
           name: "vue prps",
+        },
+        {
+          path: "emit",
+          component: () => import("@/views/vue/VueEmit.vue"),
+          name: "vue emit",
         },
       ],
     },

@@ -6,6 +6,7 @@
 </template>
 <style scoped>
 .wrap {
+  padding: 1rem 0.5rem;
   margin: 0 auto;
 }
 </style>
