@@ -1,6 +1,7 @@
 <template>
   <header>
     <router-link to="/">{{ myApplicationName }}</router-link>
+    <router-link to="/vue">Vue</router-link>
     <router-link to="/vuetify">Vuetify</router-link>
     <p>{{ printCoord({ x: 6, y: 3 }) }}</p>
   </header>
