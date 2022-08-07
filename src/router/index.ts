@@ -6,16 +6,16 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => import("../views/HomeView.vue"),
+      component: () => import("@/views/HomeView.vue"),
     },
     {
       path: "/vue",
       name: "vue home",
-      component: () => import("../views/vue/index.vue"),
+      component: () => import("@/views/vue/index.vue"),
       children: [
         {
           path: "",
-          component: () => import("../views/vue/VueMain.vue"),
+          component: () => import("@/views/vue/VueMain.vue"),
           name: "vue main",
         },
         {
@@ -28,31 +28,31 @@ const router = createRouter({
     {
       path: "/vuetify",
       name: "vuetify",
-      component: () => import("../views/vuetify/index.vue"),
+      component: () => import("@/views/vuetify/index.vue"),
       children: [
         {
           path: "",
-          component: () => import("../views/vuetify/Main.vue"),
+          component: () => import("@/views/vuetify/Main.vue"),
           name: "vuetify main",
         },
         {
           path: "slide",
-          component: () => import("../views/vuetify/Slide.vue"),
+          component: () => import("@/views/vuetify/Slide.vue"),
           name: "vuetifh slide",
         },
         {
           path: "switch",
-          component: () => import("../views/vuetify/Switch.vue"),
+          component: () => import("@/views/vuetify/Switch.vue"),
           name: "vuetify Switch",
         },
         {
           path: "textarea",
-          component: () => import("../views/vuetify/Textarea.vue"),
+          component: () => import("@/views/vuetify/Textarea.vue"),
           name: "vuetify Textarea",
         },
         {
           path: "textfield",
-          component: () => import("../views/vuetify/TextField.vue"),
+          component: () => import("@/views/vuetify/TextField.vue"),
           name: "vuetify Textfield",
         },
       ],
