@@ -1,12 +1,14 @@
 <template>
   <div class="wrap">
-    <nav>네비게이션 준비중입니다.</nav>
+    <Navigation />
     <router-view></router-view>
     <footer>푸터 준비중입니다.</footer>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Navigation from "@/components/vue/VueNavigation.vue";
+</script>
 
 <style lang="scss" scoped>
 .wrap {

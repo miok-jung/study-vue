@@ -18,11 +18,11 @@
   <p>@input을 이용하면 한국어도 실시간 반영이 가능하다.</p>
   <p>parent Model2 :{{ parentModel2 }}</p>
   <p>update를 통해서 실시간 반영이 가능하다.</p>
-  <VueEmit :text="parentModel2" @update:modelValue="parentModel2 = $event" />
+  <VueProps :text="parentModel2" @update:modelValue="parentModel2 = $event" />
 </template>
 
 <script setup lang="ts">
-import VueEmit from "@/components/vue/VueEmit.vue";
+import VueProps from "@/components/vue/VueProps.vue";
 import { ref } from "vue";
 const parentModel1 = ref<string>("");
 const parentModel2 = ref<string>("");
