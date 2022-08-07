@@ -1,4 +1,5 @@
 // Styles
+import "@mdi/font/css/materialdesignicons.css";
 import "vuetify/styles";
 import "@mdi/font/css/materialdesignicons.css"; // CSS 없으면 아이콘이 보이지 않음
 
@@ -28,3 +29,4 @@ export default createVuetify({
     defaultSet: "mdi",
   },
 });
+// https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides

@@ -8,7 +8,7 @@
   </v-app>
 </template>
 
-<script setup lang="ts">
+<script setup>
 // Components
 import VuetifyNav from "../../components/vuetify/VuetifyNav.vue";
 import VuetifyFooter from "../../components/vuetify/VuetifyFooter.vue";
