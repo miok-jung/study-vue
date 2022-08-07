@@ -2,9 +2,14 @@
   <h2>Children Input</h2>
   <label for="children-input">Children Input</label>
   <input id="children-input" type="text" placeholder="자식 인풋" />
+  <p>parentModel2 props: {{ props.text }}</p>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps<{
+  text: string;
+}>();
+</script>
 
 <style scoped lang="scss">
 input {

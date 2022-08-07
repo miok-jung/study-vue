@@ -34,7 +34,7 @@ interface ICustomInput {
 const redbuto: CSSProperties = {
   border: "1px solid black",
 };
-const black;
+// const black;
 
 function temp1(test: string, test2?: string) {
   if (test2) console.log("test2가 있다");
