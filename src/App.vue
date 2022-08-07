@@ -6,12 +6,8 @@
     </v-main>
   </v-app>
 </template>
-<script>
+<script setup lang="ts">
 import NavigationHeader from "@/components/NavigationHeader.vue";
-
-export default {
-  components: { NavigationHeader },
-};
 </script>
 <style lang="scss">
 * {
