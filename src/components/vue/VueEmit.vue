@@ -14,11 +14,11 @@
 import { ref, watch } from "vue";
 
 const props = defineProps<{
-  emitV: string;
-  // ? 있을 수도 없을 수도 있는 undefinde를 리턴해주는 값.
+  emitV?: string;
+  // Optional chaining : 값이 없는 경우 undefined를 반환
 }>();
 
-const emits = defineEmits(["customIip"]); //
+const emits = defineEmits(["customIip"]);
 const emitV = ref<unknown>("");
 // 어떤 타입이 전달될지 모를 때 any OR unknown타입을 선택할 수 있다.
 
@@ -27,7 +27,8 @@ function onInput(e: Event) {
   // emitV.value = e.target.value; // error ts2531 개체가 null인것 같다.
   // emitV.value = e.currentTarget.value; // error ts2531 개체가 null인것 같다.
   // emitV.value = e.target as HTMLInputElement; // error ts2322 'HTMLInputElement' 형식은 'string' 형식에 할당할 수 없습니다.
-  emitV.value = (e.target as HTMLInputElement).value; // 이값이 되야 에러 X
+  const target = e.target as HTMLInputElement;
+  emitV.value = target.value; // 이값이 되야 에러 X
 } // 부모 인풋 실시간 반영
 // function onInput(e: { target: HTMLInputElement }) {
 //   emitV.value = e.target.value;
