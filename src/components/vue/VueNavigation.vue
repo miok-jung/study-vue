@@ -5,6 +5,7 @@
       <li><router-link to="/vue/props">props</router-link></li>
       <li><router-link to="/vue/emit">emit</router-link></li>
       <li><router-link to="/vue/interface">interface</router-link></li>
+      <li><router-link to="/vue/style">style</router-link></li>
     </ul>
   </nav>
 </template>

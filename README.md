@@ -8,7 +8,8 @@
 
 #### 22. 08. 09 화요일
 
-- Vue Interface 사용 및 Click 연산 이벤트 적용
+- /vue/interface 사용 및 Click 연산 이벤트 적용
+- /vue/style class style binding, CSSProperties 적용
 
 ### vuetify
 
