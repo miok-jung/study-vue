@@ -10,6 +10,7 @@
 
 - /vue/interface 사용 및 Click 연산 이벤트 적용
 - /vue/style class style binding, CSSProperties 적용
+- /vue/store pinia Store에 대한 공부
 
 ### vuetify
 

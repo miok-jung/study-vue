@@ -38,6 +38,11 @@ const router = createRouter({
           component: () => import("@/views/vue/VueStyle.vue"),
           name: "vue style",
         },
+        {
+          path: "store",
+          component: () => import("@/views/vue/VueStore.vue"),
+          name: "vue store",
+        },
       ],
     },
     {
