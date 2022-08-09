@@ -1,21 +1,14 @@
 # study-vue
 
-## TODO List
-
-부족함이 있어 다시 공부해야할 리스트
-
-- ref, reactive, watch, Vuetify textarea rules
-- vue2 VS vue3도 한번 더 점검이 필요
-
-### 알려준 것들
-
-- ref, emit, optional chaining, style
-- git stash, apply + ? = pop
-- 참고 파일 : views>vuetify/TextField.vue, components/TextField.vue
-
 ## Studing List
 
 그날그날 공부한내역을 바탕으로 정리하였습니다.
+
+### Vue
+
+#### 22. 08. 09 화요일
+
+- Vue Interface 사용 및 Click 연산 이벤트 적용
 
 ### vuetify
 

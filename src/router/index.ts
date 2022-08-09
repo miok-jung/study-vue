@@ -28,6 +28,11 @@ const router = createRouter({
           component: () => import("@/views/vue/VueEmit.vue"),
           name: "vue emit",
         },
+        {
+          path: "interface",
+          component: () => import("@/views/vue/VueInterface.vue"),
+          name: "vue interface",
+        },
       ],
     },
     {
