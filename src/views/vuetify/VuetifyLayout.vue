@@ -8,8 +8,8 @@
   </v-app>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Components
-import VuetifyNav from "../../components/vuetify/VuetifyNav.vue";
-import VuetifyFooter from "../../components/vuetify/VuetifyFooter.vue";
+import VuetifyNav from "@/components/vuetify/VuetifyNav.vue";
+import VuetifyFooter from "@/components/vuetify/VuetifyFooter.vue";
 </script>
