@@ -14,7 +14,7 @@
   </p>
   <br />
   <label for="parent-input2">Parent2 Vue</label>
-  <input type="text" @input="parentModel2 = $event.target.value" />
+  <input type="text" @input="InputProps" />
   <p>@input을 이용하면 한국어도 실시간 반영이 가능하다.</p>
   <p>parent Model2 :{{ parentModel2 }}</p>
   <p>update를 통해서 실시간 반영이 가능하다.</p>
@@ -26,6 +26,10 @@ import VueProps from "@/components/vue/VueProps.vue";
 import { ref } from "vue";
 const parentModel1 = ref<string>("");
 const parentModel2 = ref<string>("");
+
+const InputProps = (e: Event) => {
+  parentModel2.value = (e.target as HTMLInputElement).value;
+};
 </script>
 
 <style lang="scss" scoped>
