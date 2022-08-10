@@ -1,5 +1,6 @@
 <template>
   <!-- TODO 고양이도 할 수 있는 Vue.js도서빌린 후 진행 -->
+  <!-- LINK https://rintiantta.github.io/jpub-vue/ -->
   <h2>Transition Children</h2>
   <div>
     <button @click="Add">추가</button><button>전체</button
