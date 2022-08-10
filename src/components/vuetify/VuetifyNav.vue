@@ -84,11 +84,11 @@ const items = ref<Item[]>([
   { title: "About", icon: "mdi-help-box" },
 ]);
 
-let loading = ref<boolean[]>([]);
-let count = ref<number | string[]>(0);
-let toggle = ref<boolean>(false);
+const loading = ref<boolean[]>([]);
+const count = ref<number | string[]>(0);
+const toggle = ref<boolean>(false);
 
-const load = (i) => {
+const load = (i: number) => {
   loading.value[i] = true;
   setTimeout(() => {
     loading.value[i] = false;
