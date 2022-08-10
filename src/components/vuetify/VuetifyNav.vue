@@ -14,10 +14,16 @@
       <router-link to="/vuetify/switch">Vuetify Switch</router-link>
     </v-list>
     <v-list nav>
+      <router-link to="/vuetify/chip">Vuetify Chip</router-link>
+    </v-list>
+    <v-list nav>
       <router-link to="/vuetify/textarea">Vuetify Textarea</router-link>
     </v-list>
     <v-list nav>
       <router-link to="/vuetify/textfield">Vuetify TextField</router-link>
+    </v-list>
+    <v-list nav>
+      <router-link to="/vuetify/grid">Vuetify Grid</router-link>
     </v-list>
     <!-- temporary : 뒷배경 반투명검정 -->
     <v-list-item>

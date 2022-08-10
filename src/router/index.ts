@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import SwitchVue from "@/components/vuetify/Switch.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -66,8 +67,13 @@ const router = createRouter({
         },
         {
           path: "switch",
-          component: () => import("@/views/vuetify/VuetifySwitch.vue"),
+          component: SwitchVue,
           name: "vuetify Switch",
+        },
+        {
+          path: "chip",
+          component: () => import("@/views/vuetify/VuetifyChip.vue"),
+          name: "vuetify chip",
         },
         {
           path: "textarea",
@@ -78,6 +84,11 @@ const router = createRouter({
           path: "textfield",
           component: () => import("@/views/vuetify/TextField.vue"),
           name: "vuetify Textfield",
+        },
+        {
+          path: "grid",
+          component: () => import("@/views/vuetify/VuetifyGrid.vue"),
+          name: "vuetify Grid",
         },
       ],
     },

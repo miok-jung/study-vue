@@ -10,6 +10,7 @@
 
 - /vue/transition 활용 및 reactive 적용완료
 - /vue/grid 공부
+- /vue/chip vuetify chip studing
 - 일부 오류 코드 수정
 
 #### 22. 08. 09 화요일
