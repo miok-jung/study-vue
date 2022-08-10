@@ -40,7 +40,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-let reveal = ref<boolean>(false);
+const reveal = ref<boolean>(false);
 </script>
 
 <style lang="scss" scoped>
