@@ -5,6 +5,7 @@ export const useCounterStore = defineStore({
   state: () => ({
     // = ref
     counter: 0,
+    length: 0,
   }),
   getters: {
     // = computed
