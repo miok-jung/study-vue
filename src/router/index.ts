@@ -48,26 +48,26 @@ const router = createRouter({
     {
       path: "/vuetify",
       name: "vuetify",
-      component: () => import("@/views/vuetify/index.vue"),
+      component: () => import("@/views/vuetify/VuetifyLayout.vue"),
       children: [
         {
           path: "",
-          component: () => import("@/views/vuetify/Main.vue"),
+          component: () => import("@/views/vuetify/VuetifyMain.vue"),
           name: "vuetify main",
         },
         {
           path: "slide",
-          component: () => import("@/views/vuetify/Slide.vue"),
+          component: () => import("@/views/vuetify/VuetifySlide.vue"),
           name: "vuetifh slide",
         },
         {
           path: "switch",
-          component: () => import("@/views/vuetify/Switch.vue"),
+          component: () => import("@/views/vuetify/VuetifySwitch.vue"),
           name: "vuetify Switch",
         },
         {
           path: "textarea",
-          component: () => import("@/views/vuetify/Textarea.vue"),
+          component: () => import("@/views/vuetify/VuetifyTextarea.vue"),
           name: "vuetify Textarea",
         },
         {

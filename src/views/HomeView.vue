@@ -25,12 +25,12 @@
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import { onMounted, reactive, ref, toRef } from "vue";
 
 // ref : 나머지 자료형
-let count = ref(); // ref == useState 변할 수 있는 값
-let changeColor = ref("");
+const count = ref(); // ref == useState 변할 수 있는 값
+const changeColor = ref("");
 // onMounted : 컴포넌트가 실행시 한번만 실행
 onMounted(() => {
   count.value = 5;
@@ -45,14 +45,14 @@ const down = () => {
 };
 
 // reactive : array -> [], object -> {}
-let test = reactive({ name: "Jung", age: "30" });
+const test = reactive({ name: "Jung", age: "30" });
 const changeName = () => {
   if (test.name === "Jung") return (test.name = "Lee");
   else return (test.name = "Jung");
 };
 
 // toRef : reactive에서 array 혹은 object를 받아서 하나의 객체로 나누는?
-let toRefTest = reactive({
+const toRefTest = reactive({
   foo: 1,
   bar: 2,
 });
