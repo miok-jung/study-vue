@@ -43,6 +43,10 @@ const router = createRouter({
           component: () => import("@/views/vue/VueStore.vue"),
           name: "vue store",
         },
+        {
+          path: "transition",
+          component: () => import("@/views/vue/VueTransition.vue"),
+        },
       ],
     },
     {

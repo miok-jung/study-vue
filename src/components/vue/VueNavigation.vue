@@ -7,6 +7,7 @@
       <li><router-link to="/vue/interface">interface</router-link></li>
       <li><router-link to="/vue/style">style</router-link></li>
       <li><router-link to="/vue/store">store</router-link></li>
+      <li><router-link to="/vue/transition">transition</router-link></li>
     </ul>
   </nav>
 </template>

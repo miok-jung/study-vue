@@ -6,6 +6,11 @@
 
 ### Vue
 
+#### 22. 08. 10 수요일
+
+- /vue/transition 활용 및 reactive 적용완료
+- 일부 오류 코드 수정
+
 #### 22. 08. 09 화요일
 
 - /vue/interface 사용 및 Click 연산 이벤트 적용
