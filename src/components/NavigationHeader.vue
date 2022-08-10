@@ -1,6 +1,6 @@
 <template>
   <header>
-    <router-link to="/">{{ myApplicationName }}</router-link>
+    <router-link to="/">NAMES</router-link>
     <router-link to="/vue">Vue</router-link>
     <router-link to="/vuetify">Vuetify</router-link>
     <p>{{ printCoord({ x: 6, y: 3 }) }}</p>
@@ -8,9 +8,6 @@
 </template>
 
 <script setup lang="ts">
-// 인터페이스는 일반적으로 타입 체크를 위해 사용되며 변수, 함수, 클래스에 사용
-let myApplicationName: string = "NAMES";
-
 const printCoord = (pt: { x: number; y: number }) => {
   // console.log("X: ", pt.x);
   // console.log("Y: ", pt.y);
