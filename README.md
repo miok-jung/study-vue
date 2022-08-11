@@ -18,7 +18,9 @@
 
 - vuetify/chip
   - filter : 체크여부를 체킹아이콘으로 보여준다.
-  - mutiple : 여러개를 중복체크할 수 있다.
+  - multiple : 여러개를 중복체크할 수 있다.
+- vuetify/item
+  - multiple : v-item-group 중복 체크가 가능 -> group이라는 vuetify component에서는 거의 비슷하게 작용하는 듯
 
 #### 22. 08. 10 수요일
 

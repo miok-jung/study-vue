@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO 버튼 클릭시 화면이 줄어들지 않는 원인 찾기 -->
   <v-app-bar color="surface">
     <v-app-bar-nav-icon @click="toggle = !toggle"></v-app-bar-nav-icon>
     <v-app-bar-title>Application</v-app-bar-title>
@@ -24,6 +25,9 @@
     </v-list>
     <v-list nav>
       <router-link to="/vuetify/grid">Vuetify Grid</router-link>
+    </v-list>
+    <v-list nav>
+      <router-link to="/vuetify/item">Vuetify Item</router-link>
     </v-list>
     <!-- temporary : 뒷배경 반투명검정 -->
     <v-list-item>
