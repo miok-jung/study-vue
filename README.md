@@ -27,6 +27,7 @@
   - 컴포넌트 사용, direction으로 세로슬라이드
   - v-hover : v-slot, elevation 속성값 사용
   - <v-img> : src, cover(비율에 맞게 채우기), aspect-ratio(비율 지정하기)
+- v-icon, v-lazy(일정 스크롤이 내려와야 업데이트)
 
 #### 22. 08. 10 수요일
 

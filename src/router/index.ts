@@ -100,6 +100,11 @@ const router = createRouter({
           component: () => import("@/views/vuetify/VuetifyWindow.vue"),
           name: "vuetify window",
         },
+        {
+          path: "img",
+          component: () => import("@/views/vuetify/VuetifyImg.vue"),
+          name: "vuetify Image",
+        },
       ],
     },
   ],
