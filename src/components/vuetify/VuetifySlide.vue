@@ -58,10 +58,10 @@
   </div>
   <div class="wrap">
     <h3>Slot</h3>
-    <p>
+    <ul>
       <li>show-ticks : 스텝별 위치가 어디인지 보여줌</li>
       <li>ticks-size : 스텝별 원형의 크기를 조절</li>
-    </p>
+    </ul>
     <v-range-slider
       :value="[0, 1]"
       min="0"
@@ -74,6 +74,72 @@
         <v-icon theme="dark" :icon="season(modelValue)"></v-icon> </template
     ></v-range-slider>
   </div>
+  <div class="wrap">
+    <h3>v-slide-group</h3>
+    <ul>
+      <li>v-slide-group를 묶어 화살표클릭이벤트를 추가할 수 있다.</li>
+    </ul>
+  </div>
+  <v-sheet class="mx-auto">
+    <v-slide-group show-arrows
+      ><v-slide-group-item
+        v-for="n in 25"
+        :key="n"
+        v-slot="{ isSelected, toggle }"
+        ><v-btn
+          class="ma-2"
+          rounded
+          :color="isSelected ? 'orange' : undefined"
+          @click="toggle"
+          >option {{ n }}</v-btn
+        ></v-slide-group-item
+      ></v-slide-group
+    >
+  </v-sheet>
+
+  <div class="wrap">
+    <h3>acitve-class</h3>
+    <ul>
+      <li>클래스 전달 활성 항목 사용자 지정</li>
+      <li>선택시 가운데로 올 수 있게 지정</li>
+      <li>아이콘을 자유롭게 변경 가능</li>
+    </ul>
+  </div>
+  <v-sheet>
+    <v-slide-group
+      v-model="model"
+      selected-class="bg-error"
+      show-arrows
+      center-active
+      prev-icon="mdi-minus"
+      next-icon="mdi-plus"
+      multiple
+    >
+      <v-slide-group-item
+        v-for="n in 15"
+        :key="n"
+        v-slot="{ isSelected, toggle, selectedClass }"
+        ><v-card
+          :class="['ma-1', selectedClass]"
+          width="100"
+          height="100"
+          @click="toggle"
+        >
+          <div class="d-flex fill-height align-center justify-center">
+            <v-scale-transition>
+              <v-icon
+                v-if="isSelected"
+                color="yellow"
+                size="48"
+                icon="mdi-airplane-plus"
+              ></v-icon>
+            </v-scale-transition>
+          </div> </v-card
+      ></v-slide-group-item>
+    </v-slide-group>
+  </v-sheet>
+
+  <!-- TODO 뉴스형 카드 만들어보기 -->
 </template>
 
 <script setup lang="ts">
@@ -86,22 +152,23 @@ const colors: Array<string> = [
   "red",
   "orange",
 ];
-let range1 = ref<number[]>([20, 40]);
+const range1 = ref<number[]>([20, 40]);
 const range2: Array<number> = [30, 50];
-let range3 = ref<number[]>([-5, 5]);
-let range4 = ref<number[]>([50, 50]);
-let range5 = ref<number[]>([10, 20]);
+const range3 = ref<number[]>([-5, 5]);
+const range4 = ref<number[]>([50, 50]);
+const range5 = ref<number[]>([10, 20]);
 
-const seasons: Array<string> = ["Winter", "Spring", "Summer", "Fall"];
 const seasonsIcons: Array<string> = [
   "mdi-snowflake",
   "mdi-leaf",
   "mdi-fire",
   "mdi-water",
 ];
-const season = (val) => {
+const season = (val: any) => {
   return seasonsIcons[val];
 };
+
+const model = ref<number>(0);
 </script>
 
 <style lang="scss">

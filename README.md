@@ -21,6 +21,8 @@
   - multiple : 여러개를 중복체크할 수 있다.
 - vuetify/item
   - multiple : v-item-group 중복 체크가 가능 -> group이라는 vuetify component에서는 거의 비슷하게 작용하는 듯
+- vuetify/slide
+  - slide-group에 대한 다양한 속성값(show-arrow, center-active, prev-icon, next-icon, multiple, selected-class)
 
 #### 22. 08. 10 수요일
 

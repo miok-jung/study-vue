@@ -20,7 +20,7 @@ export default createVuetify({
           error: "#B00020",
           info: "#2196F3",
           success: "#4CAF50",
-          warning: "#FB8C00",
+          orange: "#FB8C00",
         },
       },
     },

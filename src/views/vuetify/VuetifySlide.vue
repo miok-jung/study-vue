@@ -1,7 +1,7 @@
 <template>
-  <Slide />
+  <VuetifySlide />
 </template>
 
 <script setup lang="ts">
-import Slide from "../../components/vuetify/Slide.vue";
+import VuetifySlide from "../../components/vuetify/VuetifySlide.vue";
 </script>
