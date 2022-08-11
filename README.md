@@ -23,6 +23,10 @@
   - multiple : v-item-group 중복 체크가 가능 -> group이라는 vuetify component에서는 거의 비슷하게 작용하는 듯
 - vuetify/slide
   - slide-group에 대한 다양한 속성값(show-arrow, center-active, prev-icon, next-icon, multiple, selected-class)
+- vuetify/window
+  - 컴포넌트 사용, direction으로 세로슬라이드
+  - v-hover : v-slot, elevation 속성값 사용
+  - <v-img> : src, cover(비율에 맞게 채우기), aspect-ratio(비율 지정하기)
 
 #### 22. 08. 10 수요일
 

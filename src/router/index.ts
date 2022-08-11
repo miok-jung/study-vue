@@ -95,6 +95,11 @@ const router = createRouter({
           component: () => import("@/views/vuetify/VuetifyItem.vue"),
           name: "vuetify Item",
         },
+        {
+          path: "window",
+          component: () => import("@/views/vuetify/VuetifyWindow.vue"),
+          name: "vuetify window",
+        },
       ],
     },
   ],
