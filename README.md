@@ -6,13 +6,6 @@
 
 ### Vue
 
-#### 22. 08. 10 수요일
-
-- /vue/transition 활용 및 reactive 적용완료
-- /vue/grid 공부
-- /vue/chip vuetify chip studing
-- 일부 오류 코드 수정
-
 #### 22. 08. 09 화요일
 
 - /vue/interface 사용 및 Click 연산 이벤트 적용
@@ -20,6 +13,19 @@
 - /vue/store pinia Store에 대한 공부
 
 ### vuetify
+
+#### 22. 08. 11 목요일
+
+- vuetify/chip
+  - filter : 체크여부를 체킹아이콘으로 보여준다.
+  - mutiple : 여러개를 중복체크할 수 있다.
+
+#### 22. 08. 10 수요일
+
+- /vue/transition 활용 및 reactive 적용완료
+- /vuetify/grid 공부
+- /vuetify/chip vuetify chip studing
+- 일부 오류 코드 수정
 
 #### 22. 08. 05 금요일 공부 리스트
 
