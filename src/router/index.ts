@@ -87,7 +87,7 @@ const router = createRouter({
         },
         {
           path: "grid",
-          component: () => import("@/views/vuetify/VuetifyGrid.vue"),
+          component: () => import("@/views/vuetify/GridDialog.vue"),
           name: "vuetify Grid",
         },
         {

@@ -19,6 +19,7 @@
 - v-list, v-list-item 배열과 :item으로 나열하고, type, props, icon등을 배열에 추가항 제목 혹은 구분짓기
 - v-navigation-drawers : theme 설정, temporary 사용법, location 사용법
 - v-overlay : 호버 혹은 클릭시 overlay화면 나타내기
+- v-dialog를 활용한 모달창과 중첩모달 만들기
 
 #### 22. 08. 11 목요일
 
