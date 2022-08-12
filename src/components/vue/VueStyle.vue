@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, type CSSProperties } from "vue";
+import { ref, type CSSProperties } from "vue";
 const isActive = ref<boolean>(false);
 
 const darkClick = () => {
@@ -43,7 +43,6 @@ const darkTeme: CSSProperties = {
   border: "1px solid $color2",
   color: "white",
 };
-watch;
 </script>
 
 <style scoped lang="scss">
