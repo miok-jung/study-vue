@@ -28,7 +28,7 @@
       <router-link to="/vuetify/grid">Vuetify Grid</router-link>
     </v-list>
     <v-list nav>
-      <router-link to="/vuetify/item">Vuetify Item</router-link>
+      <router-link to="/vuetify/item">Vuetify Item & Overlay</router-link>
     </v-list>
     <v-list nav>
       <router-link to="/vuetify/window">Vuetify Window & Hover</router-link>

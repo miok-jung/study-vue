@@ -92,7 +92,7 @@ const router = createRouter({
         },
         {
           path: "item",
-          component: () => import("@/views/vuetify/VuetifyItem.vue"),
+          component: () => import("@/views/vuetify/ItemOverlay.vue"),
           name: "vuetify Item",
         },
         {
