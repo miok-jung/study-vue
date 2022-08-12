@@ -1,10 +1,11 @@
 <template>
   <!-- TODO 버튼 클릭시 화면이 줄어들지 않는 원인 찾기 -->
   <v-app-bar color="surface">
-    <v-app-bar-nav-icon @click="toggle = !toggle"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click.stop="toggle = !toggle"></v-app-bar-nav-icon>
     <v-app-bar-title>Application</v-app-bar-title>
   </v-app-bar>
-  <v-navigation-drawer permanent v-if="toggle == true" width="100%">
+
+  <v-navigation-drawer v-model="toggle" temporary>
     <v-list nav>
       <router-link to="/vuetify">Vuetify Main</router-link>
     </v-list>

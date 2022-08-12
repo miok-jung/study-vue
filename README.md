@@ -17,7 +17,7 @@
 #### 22. 08. 12 금요일
 
 - v-list, v-list-item 배열과 :item으로 나열하고, type, props, icon등을 배열에 추가항 제목 혹은 구분짓기
--
+- v-navigation-drawers : theme 설정, temporary 사용법, location 사용법
 
 #### 22. 08. 11 목요일
 
