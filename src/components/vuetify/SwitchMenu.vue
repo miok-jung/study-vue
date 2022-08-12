@@ -71,10 +71,63 @@
     <p>loading값을 통해서 대기중을 알려줄 수 있다.</p>
     <v-switch v-model="model6" loading="warning"></v-switch>
   </div>
+  <div class="wrap">
+    <h2>Menu</h2>
+    <p>
+      select에서 선택시 해당하는 위치에 네비게이션을 보여주며, 호버 이벤트를
+      진행할 수 있다.
+    </p>
+    <v-select
+      v-model="location"
+      :items="locations"
+      label="Selection to Locations"
+    ></v-select>
+    <v-menu class="mx-auto" :location="location" open-on-hover>
+      <template v-slot:activator="{ props }">
+        <v-btn dark v-bind="props"> Dropdown</v-btn>
+      </template>
+      <v-list>
+        <v-list-item v-for="(item, i) in 10" :key="i">{{ item }}</v-list-item>
+      </v-list>
+    </v-menu>
+
+    <h3>My Profile</h3>
+    <v-menu location="end" :close-on-content-click="false">
+      <template v-slot:activator="{ props }">
+        <v-btn v-bind="props">My Profile</v-btn>
+      </template>
+      <v-card>
+        <v-list>
+          <v-list-item
+            prepend-avatar="https://cdn.vuetifyjs.com/images/john.jpg"
+            title="John Leider"
+            subtitle="Founder of Vuetify"
+          >
+            <template v-slot:append>
+              <!-- variant="text" : 버튼외부 그림자 삭제 -->
+              <v-btn
+                icon="mdi-heart"
+                variant="text"
+                :class="likeClick ? 'text-red' : ''"
+                @click="likeClick = !likeClick"
+              ></v-btn>
+            </template>
+          </v-list-item>
+        </v-list>
+        <v-divider></v-divider>
+        <v-list>
+          <v-list-item v-for="n in 6" :key="n">{{ n }}</v-list-item>
+        </v-list>
+      </v-card>
+    </v-menu>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
+
+export type locationType = "top" | "bottom" | "start" | "end" | "center";
+// NOTE export type은 최상단에 위치해야 한다.
 
 interface people {
   name: string;
@@ -85,6 +138,16 @@ const model3 = ref<boolean>(false);
 const model4 = ref<people[]>([]);
 const model5 = ref<string>("니오");
 const model6 = ref<boolean>(false);
+
+const location = ref<locationType>("top");
+const locations: Array<locationType> = [
+  "top",
+  "bottom",
+  "start",
+  "end",
+  "center",
+];
+const likeClick = ref<boolean>(false);
 </script>
 
 <style lang="scss">

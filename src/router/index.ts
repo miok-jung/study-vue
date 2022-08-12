@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import SwitchVue from "@/components/vuetify/Switch.vue";
+import SwitchMenu from "@/components/vuetify/SwitchMenu.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -67,8 +67,8 @@ const router = createRouter({
         },
         {
           path: "switch",
-          component: SwitchVue,
-          name: "vuetify Switch",
+          component: SwitchMenu,
+          name: "vuetify Switch & menu",
         },
         {
           path: "chip",
