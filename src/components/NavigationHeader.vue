@@ -8,10 +8,6 @@
 
 <style lang="scss" scoped>
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   background: $color2;
   height: 2rem;
   a {
