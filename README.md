@@ -19,6 +19,7 @@
 - v-tooltip에 대한 사용방법으로 호버시 안내멘트를 날릴 수 있다.
 - v-pagination을 통해 페이지 리스트 만들기
 - v-porgress-circular 사이즈/비율/회전/시작점 에 대한 공부
+- v-progress-linear에 대한 로딩/크기/색상에 대한 공부
 
 #### 22. 08. 12 금요일
 
