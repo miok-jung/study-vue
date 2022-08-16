@@ -37,7 +37,7 @@
       <router-link to="/vuetify/img">Vuetify Image</router-link>
     </v-list>
     <v-list nav>
-      <router-link to="/vuetify/rating">Rating</router-link>
+      <router-link to="/vuetify/rating">Rating, Snackbars</router-link>
     </v-list>
     <!-- temporary : 뒷배경 반투명검정 -->
     <v-list-item>

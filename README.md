@@ -21,6 +21,8 @@
 - v-porgress-circular 사이즈/비율/회전/시작점 에 대한 공부
 - v-progress-linear에 대한 로딩/크기/색상에 대한 공부
 - v-ratings 평가/.5/라벨색상/평가칼라/개수 등
+- v-sheet는 쓸 수 있는가? 에러가 나는데 이유를 알 수 없다.
+- v-snackBars 하단중앙 안내창/디자인/settiemout등 적용
 
 #### 22. 08. 12 금요일
 
