@@ -14,6 +14,12 @@
 
 ### vuetify
 
+#### 22. 08. 16 화요일
+
+- v-tooltip에 대한 사용방법으로 호버시 안내멘트를 날릴 수 있다.
+- v-pagination을 통해 페이지 리스트 만들기
+- v-porgress-circular 사이즈/비율/회전/시작점 에 대한 공부
+
 #### 22. 08. 12 금요일
 
 - v-list, v-list-item 배열과 :item으로 나열하고, type, props, icon등을 배열에 추가항 제목 혹은 구분짓기
