@@ -44,7 +44,6 @@
       </v-col>
     </v-row>
     <p>v-model을 통해서 클릭이벤트로 다른 태그에 tooltip을 넣을 수 있다.</p>
-
     <v-btn @click="showTooltip = !showTooltip">Toogle Click</v-btn>
     <v-tooltip v-model="showTooltip" top>
       <template v-slot:activator="{ props }">
