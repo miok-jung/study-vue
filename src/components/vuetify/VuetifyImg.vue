@@ -43,11 +43,13 @@
         </v-card>
       </v-lazy>
     </v-responsive>
+    <v-img :src="testImg"></v-img>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
+import testImg from "@/assets/butterfly.jpg";
 
 const isActive = ref<boolean>(false);
 </script>

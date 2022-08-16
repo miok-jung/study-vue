@@ -15,7 +15,7 @@ export default createVuetify({
         colors: {
           background: "#f5e8c7",
           surface: "#ecccb2",
-          primary: "#deb6ab",
+          primary: "#deb6ab", // card 배경화면
           secondary: "#03DAC6",
           error: "#B00020",
           info: "#2196F3",
