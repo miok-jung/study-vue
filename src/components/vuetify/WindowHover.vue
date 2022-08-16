@@ -46,8 +46,9 @@
         >
       </v-hover>
     </div>
+    <h2>v-hover</h2>
     <v-hover v-slot="{ isHovering, props }">
-      <v-card v-bind="props"
+      <v-card v-bind="props" width="50%"
         ><v-img
           src="https://picsum.photos/1600/800"
           cover
