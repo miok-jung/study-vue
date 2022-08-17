@@ -110,6 +110,11 @@ const router = createRouter({
           component: () => import("@/views/vuetify/VuetifyRating.vue"),
           name: "vuetify rating",
         },
+        {
+          path: "system",
+          component: () => import("@/views/vuetify/SystemBar.vue"),
+          name: "vuetify system bar",
+        },
       ],
     },
   ],
