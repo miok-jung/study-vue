@@ -40,7 +40,7 @@
       <router-link to="/vuetify/rating">Rating, Snackbars</router-link>
     </v-list>
     <v-list nav>
-      <router-link to="/vuetify/system">system-bar</router-link>
+      <router-link to="/vuetify/system">system-bar, table, tabs</router-link>
     </v-list>
     <!-- temporary : 뒷배경 반투명검정 -->
     <v-list-item>

@@ -18,6 +18,7 @@
 
 - v-system-bar : window속성 사용
 - v-table에 대한 높이/고정/크기
+- v-tab, v-tabs사용법 모바일 레이아웃 스터디
 
 #### 22. 08. 16 화요일
 
