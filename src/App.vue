@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <!-- <MainHeaderVue /> -->
-    <v-navigation-drawer app> dd</v-navigation-drawer>
+    <MainNavigation />
     <!-- Sizes your content based upon application components -->
     <v-main>
       <p>This is Main</p>
@@ -19,5 +18,5 @@
   </v-app>
 </template>
 <script setup lang="ts">
-// import MainHeaderVue from "./components/MainHeader.vue";
+import MainNavigation from "./components/MainNavigation.vue";
 </script>
