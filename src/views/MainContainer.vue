@@ -1,5 +1,4 @@
 <template>
-  <h1>MainHome</h1>
+  <h2>Main Container</h2>
+  <router-view></router-view>
 </template>
-
-<script setup lang="ts"></script>

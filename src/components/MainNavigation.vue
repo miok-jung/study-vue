@@ -18,25 +18,22 @@
     </v-list-item>
     <v-divider></v-divider>
     <v-list nav>
-      <!-- <router-link
+      <router-link
         v-for="list in navListArray"
         :key="list.value"
         :to="list.url"
         style="text-decoration: none; color: black"
-      > -->
-      <v-list-item
-        v-for="list in navListArray"
-        :key="list.value"
-        active-color="#80558C"
-        nav
-        style="overflow: hidden"
-        :prepend-icon="`mdi-${list.icon}`"
-        :title="list.text"
-        :value="list.value"
-        :href="list.url"
       >
-      </v-list-item>
-      <!-- </router-link> -->
+        <v-list-item
+          active-color="#80558C"
+          nav
+          style="overflow: hidden"
+          :prepend-icon="`mdi-${list.icon}`"
+          :value="list.value"
+          :title="list.text"
+        >
+        </v-list-item>
+      </router-link>
     </v-list>
   </v-navigation-drawer>
 </template>
