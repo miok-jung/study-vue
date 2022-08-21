@@ -1,104 +1,94 @@
 <template>
   <v-navigation-drawer
     permanent
-    v-model="navToggle"
+    v-model="navDrawer"
     :rail="navRail"
     @click="navRail = false"
   >
-    <v-list-item :prepend-avatar="Logo">
+    <v-list-item nav :prepend-avatar="Logo" title="VND FREE">
+      <!-- prepend Front, append Back -->
       <template v-slot:append>
-        <P
-          class="nav_logo"
-          :style="navRail == true ? `display: none;` : `display: block;`"
-          ><strong>VMD</strong> FREE</P
-        >
-        <v-btn
+        <!-- variant="text" : 버튼 섀도우를 없애주는 기능 -->
+        <v-icon
+          icon="mdi-chevron-left"
           variant="text"
-          icon="mdi-arrow-left"
           @click.stop="navRail = !navRail"
-        ></v-btn>
+        ></v-icon>
       </template>
     </v-list-item>
     <v-divider></v-divider>
-    <v-list>
-      <router-link v-for="list in listItems" :key="list.value" :to="list.url">
-        <v-list-item
-          active-color="#e91e63"
-          nav
-          :prepend-icon="`mdi-${list.prependIcon}`"
-          :title="list.title"
-          :value="list.value"
-        ></v-list-item>
-      </router-link>
+    <v-list nav>
+      <!-- <router-link
+        v-for="list in navListArray"
+        :key="list.value"
+        :to="list.url"
+        style="text-decoration: none; color: black"
+      > -->
+      <v-list-item
+        v-for="list in navListArray"
+        :key="list.value"
+        active-color="#80558C"
+        nav
+        style="overflow: hidden"
+        :prepend-icon="`mdi-${list.icon}`"
+        :title="list.text"
+        :value="list.value"
+        :href="list.url"
+      >
+      </v-list-item>
+      <!-- </router-link> -->
     </v-list>
   </v-navigation-drawer>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
 import Logo from "@/assets/images/logo.svg";
+import { ref } from "vue";
 
-const navToggle = ref<boolean>(true);
-const navRail = ref<boolean>(true);
-
-interface listItemType {
+interface navLists {
   url: string;
-  prependIcon: string;
-  title: string;
+  icon: string;
+  text: string;
   value: string;
 }
 
-const listItems: Array<listItemType> = [
+const navListArray: Array<navLists> = [
   {
-    url: "/",
-    prependIcon: "view-dashboard",
-    title: "DashBoard",
+    url: "/dashboard",
+    icon: "view-dashboard",
+    text: "Dashboard",
     value: "dashboard",
   },
   {
-    url: "/",
-    prependIcon: "account",
-    title: "User Profile",
-    value: "userprofile",
+    url: "/profile",
+    icon: "account",
+    text: "User Profile",
+    value: "profile",
   },
   {
-    url: "/",
-    prependIcon: "calendar-range",
-    title: "Reguler Table",
-    value: "regulertable",
+    url: "/table",
+    icon: "clipboard-outline",
+    text: "Regular Table",
+    value: "table",
   },
   {
-    url: "/",
-    prependIcon: "alphabetical-variant",
-    title: "Typography",
+    url: "/translate",
+    icon: "translate",
+    text: "Typography",
     value: "typography",
   },
-  { url: "/", prependIcon: "auto-fix", title: "Icons", value: "icons" },
+  { url: "/icon", icon: "chart-bubble", text: "Icon", value: "icon" },
+  { url: "/map", icon: "map-marker", text: "Google Maps", value: "map" },
   {
-    url: "/",
-    prependIcon: "map-marker-check-outline",
-    title: "Google Maps",
-    value: "googlemaps",
-  },
-  {
-    url: "/",
-    prependIcon: "bell",
-    title: "Notifications",
-    value: "notifications",
+    url: "/notifications",
+    icon: "bell",
+    text: "Notifications",
+    value: "notification",
   },
 ];
+// rail : 네비게이션의 크기를 확대/축소하는 기능
+const navRail = ref<boolean>(true);
+const navDrawer = ref<boolean>(true);
 </script>
 
-<style scoped lang="scss">
-.nav_logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5rem;
-  color: red;
-  strong {
-    color: black;
-  }
-}
-</style>
+<style lang="scss"></style>
