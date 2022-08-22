@@ -1,6 +1,6 @@
 <template>
   <!-- TODO 버튼 클릭시 화면이 줄어들지 않는 원인 찾기 -->
-  <v-app-bar color="surface">
+  <v-app-bar color="surface" style="position: sticky">
     <v-app-bar-nav-icon @click.stop="toggle = !toggle"></v-app-bar-nav-icon>
     <v-app-bar-title>Application</v-app-bar-title>
   </v-app-bar>
