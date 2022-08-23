@@ -1,24 +1,8 @@
 <template>
-  <v-app>
-    <v-main>
-      <NavigationHeader />
-      <router-view />
-    </v-main>
-  </v-app>
+  <MainHeaderVue />
+  <h1>Click to Pages</h1>
+  <router-view></router-view>
 </template>
 <script setup lang="ts">
-import NavigationHeader from "@/components/NavigationHeader.vue";
+import MainHeaderVue from "./components/MainHeader.vue";
 </script>
-<style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-</style>
