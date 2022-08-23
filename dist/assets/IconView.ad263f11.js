@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as c,c as o}from"./index.7077fa5e.js";const n={};function r(t,a){return c(),o("h2",null,"Icon View Page")}const f=e(n,[["render",r]]);export{f as default};

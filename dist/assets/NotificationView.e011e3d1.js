@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as t}from"./index.7077fa5e.js";const c={};function n(r,i){return o(),t("h2",null,"Notification View Pages")}const f=e(c,[["render",n]]);export{f as default};

@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as r,c}from"./index.7077fa5e.js";const o={};function t(n,a){return r(),c("h2",null,"User Table")}const l=e(o,[["render",t]]);export{l as default};
