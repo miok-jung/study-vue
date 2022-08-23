@@ -117,6 +117,11 @@ const router = createRouter({
         },
       ],
     },
+    {
+      path: "/todos",
+      name: "todos",
+      component: () => import("@/views/todos/TodoMain.vue"),
+    },
   ],
 });
 

@@ -5,6 +5,7 @@
       <li><router-link to="/vue2">vue2</router-link></li>
       <li><router-link to="/vue3">vue3</router-link></li>
       <li><router-link to="/vuetify">vuetify</router-link></li>
+      <li><router-link to="/todos">Todos</router-link></li>
     </ul>
   </header>
 </template>
