@@ -2,9 +2,14 @@
   <h2>Logged in as Eduardo</h2>
   <form>
     <label for="title">title</label>
-    <input id="title" type="text" @input="titleEvent" />
+    <input id="title" type="text" @input="titleEvent" :value="titleValue" />
     <label for="content">content</label>
-    <input id="content" type="text" @input="contentEvent" />
+    <input
+      id="content"
+      type="text"
+      @input="contentEvent"
+      :value="contentValue"
+    />
     <button @click="handleAddItem">Add</button>
   </form>
   <hr />
