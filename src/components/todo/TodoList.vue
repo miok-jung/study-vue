@@ -27,6 +27,7 @@ import { useTodoStore } from "@/stores/todo";
 import type todoType from "@/stores/todo";
 
 const todos = useTodoStore();
+// generic 데이터 타입을 일반화
 const renderTodoList = ref<Array[todoType]>(todos.todos);
 const counter = ref<number>(renderTodoList.value.length);
 
