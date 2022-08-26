@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as r}from"./index.7077fa5e.js";const c={};function a(t,n){return o(),r("h2",null,"Dashiboard")}const f=e(c,[["render",a]]);export{f as default};

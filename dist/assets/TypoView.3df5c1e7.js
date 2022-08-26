@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as r}from"./index.7077fa5e.js";const c={};function t(n,a){return o(),r("h2",null,"Typography")}const p=e(c,[["render",t]]);export{p as default};

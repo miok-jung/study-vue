@@ -1,10 +1,5 @@
 <template>
   <div class="main">
-    <!-- <p>현재 공부중인 것을 보여주기 위해 다양한 페이지로 준비중입니다.</p>
-    <li>
-      <router-link to="/vuetify"><b>Vuetify</b></router-link>
-      : Vuetify를 적용하여 레이아웃 만들기
-    </li> -->
     <div>
       <h2>Ref</h2>
       <p :style="changeColor">{{ count }}</p>
