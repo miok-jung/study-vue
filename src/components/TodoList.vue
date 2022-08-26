@@ -21,8 +21,6 @@
       </tr>
     </tbody>
   </table>
-
-  <p>{{ props.lists }}</p>
 </template>
 
 <script setup lang="ts">
