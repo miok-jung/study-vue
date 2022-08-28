@@ -4,8 +4,10 @@
     <router-view></router-view>
   </div>
 </template>
-<style scoped>
+<style>
 .wrap {
+  margin: 0 auto;
+  width: 70vw;
   text-align: center;
 }
 </style>
