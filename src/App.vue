@@ -1,9 +1,11 @@
 <template>
-  <!-- <MainHeaderVue />
-  <router-view></router-view> -->
-  <h1>App.vue</h1>
-  <router-view></router-view>
+  <div class="wrap">
+    <h1>App.vue</h1>
+    <router-view></router-view>
+  </div>
 </template>
-<script setup lang="ts">
-// import MainHeaderVue from "./components/MainHeader.vue";
-</script>
+<style scoped>
+.wrap {
+  text-align: center;
+}
+</style>
