@@ -13,7 +13,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(list, i) in props.lists" :key="i">
+        <tr v-for="(list, i) in todos.todos" :key="i">
           <td>{{ list.id }}</td>
           <td>{{ list.title }}</td>
           <td>{{ list.content }}</td>
@@ -38,12 +38,6 @@
 
 <script setup lang="ts">
 import { useTodoStore } from "@/stores/todo";
-
-const props = defineProps<{
-  // FIXME 해결법 찾기 아래 주석이 정말 좋은 해석법인지? 지우면 해당 에러내역 확인 가능
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  lists: Array<any>;
-}>();
 
 const todos = useTodoStore();
 const handleRemoveItem = (e: Event) => {
