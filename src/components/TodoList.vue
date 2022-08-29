@@ -6,17 +6,28 @@
         <th>Number</th>
         <th>Title</th>
         <th>Content</th>
-        <th>Modify / Delete</th>
+        <th>View</th>
+        <th>Modify</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(list, i) in props.lists" :key="i">
+      <tr v-for="(list, i) in todos.todos" :key="i">
         <td>{{ list.id }}</td>
         <td>{{ list.title }}</td>
         <td>{{ list.content }}</td>
         <td>
-          <button>Modify</button>
-          <button @click="handleRemoveItem">Delete</button>
+          <button><v-icon>mdi-note-multiple-outline</v-icon></button>
+        </td>
+        <td>
+          <button>
+            <v-icon>mdi-pencil-outline</v-icon>
+          </button>
+        </td>
+        <td>
+          <button @click="handleRemoveItem">
+            <v-icon>mdi-delete</v-icon>
+          </button>
         </td>
       </tr>
     </tbody>
@@ -26,12 +37,6 @@
 <script setup lang="ts">
 import { useTodoStore } from "@/stores/todo";
 
-const props = defineProps<{
-  // FIXME 해결법 찾기 아래 주석이 정말 좋은 해석법인지? 지우면 해당 에러내역 확인 가능
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  lists: Array<any>;
-}>();
-
 const todos = useTodoStore();
 const handleRemoveItem = (e: Event) => {
   e.preventDefault();
@@ -40,6 +45,45 @@ const handleRemoveItem = (e: Event) => {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 // TODO LIST CSS 만들기
+
+h3 {
+  margin: 2rem 0;
+}
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-spacing: 0;
+  thead {
+    line-height: 3rem;
+    background-color: #f1f2f3;
+    tr {
+      th {
+        border-right: 1px solid grey;
+        &:first-child,
+        &:nth-child(4),
+        &:nth-child(5) {
+          width: 5rem;
+        }
+        &:last-child {
+          width: 5rem;
+          border-right: 0;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        line-height: 2.5rem;
+        border-right: 1px solid grey;
+        border-top: 1px solid grey;
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+  }
+}
 </style>
