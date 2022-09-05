@@ -8,7 +8,7 @@ import vuetify from "vite-plugin-vuetify";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === "production" ? "/study-vue/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/vue-todos/" : "/",
   build: {
     outDir: "docs",
   },
